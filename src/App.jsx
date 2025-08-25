@@ -1,14 +1,14 @@
-import React from 'react'
-import Navbar from './components/Navbar'
-import Home from './components/Home'
+import React from "react";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
 
 const App = () => {
-  return (
-    <div>
-      <Navbar/>
-      <Home/>
-    </div>
-  )
-}
+    return (
+        <div className="h-screen w-screen flex flex-col justify-center items-center">
+            <Navbar />
+            <Home />
+        </div>
+    );
+};
 
-export default App
+export default App;
