@@ -67,7 +67,7 @@ const Courses = () => {
                     Courses build to prepare you for the real tech world
                 </p>
             </div>
-            <div className="h-[86%] w-full grid grid-cols-3 grid-rows-2 gap-6 p-3">
+            <div className="h-[86%] w-full grid grid-cols-3 grid-rows-2 gap-6 p-3 max-md:grid-cols-1 max-md:grid-rows-6 max-md:h-auto ">
                 {coursesDetails.map((course) => (
                     <div className="h-full w-full flex flex-col">
                         <img

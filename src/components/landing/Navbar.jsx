@@ -2,7 +2,7 @@ import React from "react"
 
 const Navbar = ({currentPage, setCurrentPage}) => {
     return (
-        <div className="h-[10%] w-full flex px-3 max-md:justify-between top-0 left-0  bg-white shadow-md z-50  py-4">
+        <div className="h-[10%] w-full flex px-3 max-md:justify-between top-0 left-0  bg-white shadow-md z-50  py-2">
             <div className="h-full w-[30%] flex items-center">
                 <img className="h-full" src="/logo.png" alt="logo" />
                 <h1 className="font-bold text-xl">Launchpad</h1>
@@ -14,7 +14,7 @@ const Navbar = ({currentPage, setCurrentPage}) => {
                 <button onClick={() => (setCurrentPage("Contact"))} className={`text-md font-semibold ${currentPage=="Contact" ? "underline decoration-[#03989E]" : ""}`}>Contact</button>
             </div>
             <div className="h-full w-[30%] flex items-center justify-end">
-                <button className="h-2/3 w-1/3 max-md:w-2/3 bg-[#03989E] rounded-xl text-white font-semibold">Login</button>
+                <button className="h-full w-1/3 max-md:w-2/3 bg-[#03989E] rounded-xl text-white font-semibold">SignIn</button>
             </div>
         </div>
     );
