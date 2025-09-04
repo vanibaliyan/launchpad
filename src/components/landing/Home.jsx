@@ -2,7 +2,7 @@ import React from "react";
 
 const Home = () => {
     return (
-        <div className="h-[90%] w-full flex flex-col justify-between max-md:gap-3">
+        <div className="h-[100%] w-full flex flex-col justify-between max-md:gap-3">
             <div className="h-[35%]  flex flex-col justify-evenly max-md:h-[40%] max-md:gap-6">
                 <div className="h-auto w-full flex flex-col justify-center px-4 gap-4">
                     <h1 className="text-5xl font-semibold text-center max-md:text-3xl">

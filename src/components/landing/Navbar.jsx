@@ -2,7 +2,7 @@ import React from "react"
 
 const Navbar = ({currentPage, setCurrentPage}) => {
     return (
-        <div className="h-[10%] w-full flex px-3 max-md:justify-between">
+        <div className="h-[10%] w-full flex px-3 max-md:justify-between top-0 left-0  bg-white shadow-md z-50  py-4">
             <div className="h-full w-[30%] flex items-center">
                 <img className="h-full" src="/logo.png" alt="logo" />
                 <h1 className="font-bold text-xl">Launchpad</h1>
