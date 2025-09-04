@@ -58,7 +58,7 @@ const Courses = () => {
         },
     ];
     return (
-        <div className="h-[90%] w-full flex flex-col justify-between max-md:gap-3 ">
+        <div className="h-[100%] w-full flex flex-col justify-between max-md:gap-3 ">
             <div className="h-[14%] flex flex-col items-center justify-center">
                 <h1 className="text-xl font-semibold md:text-2xl">
                     Courses designed for fast changing world

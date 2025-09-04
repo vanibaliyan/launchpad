@@ -8,20 +8,25 @@ import Contact from "./landing/Contact";
 const LandingPage = () => {
     const [currentPage, setCurrentPage] = useState("Home");
     return (
-        <div className="h-full w-full flex flex-col justify-center items-center">
+
+        <div className="h-full w-full flex flex-col justify-center items-center overflow-hidden">
             <Navbar currentPage={currentPage} setCurrentPage={setCurrentPage} />
-            {currentPage == "Home" ? (
-                <Home />
-            ) : currentPage == "About" ? (
-                <About />
-            ) : currentPage == "Courses" ? (
-                <Courses />
-            ) : currentPage == "Contact" ? (
-                <Contact />
-            ) : (
-                ""
-            )}
+            <div className="h-[88%] w-full overflow-y-auto">
+                {currentPage == "Home" ? (
+                    <Home />
+                ) : currentPage == "About" ? (
+                    <About />
+                ) : currentPage == "Courses" ? (
+                    <Courses />
+                ) : currentPage == "Contact" ? (
+                    <Contact />
+                ) : (
+                    ""
+                )}
+
+            </div>
         </div>
+    
     );
 };
 

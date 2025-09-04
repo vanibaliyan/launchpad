@@ -29,12 +29,12 @@ const About = () => {
 
     ]
     return (
-        <div className="h-[90%] w-full flex flex-col items-center">
-            <p className="h-auto w-fit flex text-2xl font-semibold">
+        <div className="h-[100%] w-full flex flex-col items-center">
+            <p className="h-auto w-fit flex text-2xl font-semibold mt-6">
                 About the launchpad
             </p>
 
-            <div className="flex-1 p-6 grid grid-cols-3 gap-6 items-center max-md:grid-1">
+            <div className="flex-1 p-6 grid grid-cols-3 gap-6 items-center max-md:grid-cols-1">
                 {
                     abouts.map((about)=>(
                         <div className="h-full flex flex-col px-6 py-4 border-3 rounded-xl border-[#03989E]">
