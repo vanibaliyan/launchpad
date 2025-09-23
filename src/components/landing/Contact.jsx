@@ -1,29 +1,50 @@
-import React from 'react'
+import React from "react";
 
 const Contact = () => {
-  return (
-    <div className="h-full px-15 py-10 w-full flex flex-col justify-between max-md:gap-3">
-        <div className='bg-[#03989E]/20 flex flex-col h-[80%] md:h-full gap-8 md:gap-5 rounded py-8 md:py-2'>
-            <h1 className='text-xl font-semibold text-center'>Contact form</h1>
-            <div className='flex flex-col px-10 gap-1'>
-                <label className='px-2 text-md font-semibold' htmlFor="name">Name</label>
-                <input className='px-2 py-1 border-2 border-[#03989E] rounded outline-none' id='name' type="text" placeholder='Enter name' />
-            </div>
-            <div className='flex flex-col px-10 gap-1'>
-                <label className='px-2 text-md font-semibold' htmlFor="name">Email</label>
-                <input className='px-2 py-1 border-2 border-[#03989E] rounded outline-none' id='email' type="email" placeholder='Enter email' />
-            </div>
-            <div className='flex flex-col px-10 gap-1'>
-                <label className='px-2 text-md font-semibold' htmlFor="name">Message</label>
-                <textarea className='px-2 py-1 border-2 border-[#03989E] rounded outline-none' rows='4' id='message' type="text" placeholder='Enter message' />
-            </div>
-            <div className='flex items-center justify-center'>
-                <button className='px-4 py-1 bg-[#03989E] rounded-xl font-semibold text-white' >Submit</button>
-            </div>
+    return (
+        <div className="h-[100%] w-full flex flex-col justify-center items-center">
+            <div className="h-3/4 w-1/3 border-3 border-[#03989E] flex flex-col  items-center max-md:w-5/6 max-md:h-2/3">
+                <div className="h-[15%] w-full flex flex-col justify-center items-center">
+                    <h1 className="font-semibold text-xl">Contact Us</h1>
+                </div>
+                <div className="h-[70%] w-5/6 flex flex-col items-center justify-center gap-5 max-md:w-3/4 ">
+                    <div className="h-auto w-full flex gap-2 max-md:flex-wrap">
+                        <input
+                            className="h-auto w-full text-black text-sm border border-[#05acb2] p-2 outline-none "
+                            type="text"
+                            placeholder="Name"
+                        />
+                        <input
+                            className="h-auto w-full text-black text-sm border border-[#05acb2] p-2 outline-none "
+                            type="email"
+                            placeholder="Email"
+                        />
+                    </div>
+                    <div className="h-aito w-full flex gap-2 max-md:flex-wrap">
+                        <input
+                            className="h-auto w-full text-black text-sm border border-[#05acb2] p-2 outline-none "
+                            type="number"
+                            placeholder="Contact Number"
+                        />
+                        <input
+                            className="h-auto w-full text-black text-sm border border-[#05acb2] p-2 outline-none "
+                            type="text"
+                            placeholder="Subject"
+                        />
+                    </div>
+                    <input
+                        className="h-24 w-full text-black text-sm border border-[#05acb2] p-2 outline-none"
+                        type="textarea"
+                        placeholder="Message"
+                    />
+                </div>
 
+                <button className="h-auto bg-[#03989E] w-2/3 py-1 text-white font-semibold rounded">
+                    Send Message
+                </button>
+            </div>
         </div>
-    </div>
-  )
-}
+    );
+};
 
-export default Contact
+export default Contact;

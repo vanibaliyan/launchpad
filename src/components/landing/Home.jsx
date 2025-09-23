@@ -6,10 +6,10 @@ const Home = () => {
             <div className="h-[35%]  flex flex-col justify-evenly max-md:h-[40%] max-md:gap-6">
                 <div className="h-auto w-full flex flex-col justify-center px-4 gap-4">
                     <h1 className="text-5xl font-semibold text-center max-md:text-3xl">
-                        Launch your Tech Journey with Launchpad
+                        Launch your  Journey with Launchpad
                     </h1>
                     <h2 className="text-lg text-center max-md:text-base">
-                        Launchpad is an Ed-tech platform helping students build
+                        Launchpad is an EdTech platform helping students build
                         their future with hands-on tech skills
                     </h2>
                 </div>
